@@ -1,0 +1,41 @@
+{
+  "id": "articles",
+  "type": "SharedSlice",
+  "name": "Articles",
+  "description": "Articles",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "uid": {
+          "type": "Text",
+          "config": { "label": "uid", "placeholder": "" }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        }
+      },
+      "items": {
+        "article": {
+          "type": "Link",
+          "config": {
+            "label": "Article",
+            "select": "document",
+            "customtypes": ["article"]
+          }
+        }
+      }
+    }
+  ]
+}

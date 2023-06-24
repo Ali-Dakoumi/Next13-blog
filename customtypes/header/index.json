@@ -1,0 +1,27 @@
+{
+  "id": "header",
+  "label": "Header",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": { "choices": { "links": { "type": "SharedSlice" } } }
+      }
+    },
+    "WithLogo": {
+      "logo": {
+        "type": "Image",
+        "config": { "label": "Logo", "constraint": {}, "thumbnails": [] }
+      },
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": { "choices": { "links": { "type": "SharedSlice" } } }
+      }
+    }
+  }
+}

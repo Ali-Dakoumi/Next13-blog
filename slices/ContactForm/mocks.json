@@ -1,0 +1,58 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"submit_button": {
+				"__TYPE__": "FieldContent",
+				"value": "ordinary",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"label",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "away",
+							"type": "Text"
+						}
+					],
+					[
+						"placeholder",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "labor",
+							"type": "Text"
+						}
+					],
+					[
+						"name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "force",
+							"type": "Text"
+						}
+					],
+					[
+						"required",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": true
+						}
+					],
+					[
+						"is_text_area",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
+						}
+					]
+				]
+			}
+		]
+	}
+]

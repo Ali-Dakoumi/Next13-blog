@@ -1,0 +1,49 @@
+{
+  "id": "newsletter",
+  "type": "SharedSlice",
+  "name": "Newsletter",
+  "description": "Newsletter",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "subtitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subtitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "placeholder": {
+          "type": "Text",
+          "config": { "label": "Placeholder", "placeholder": "" }
+        },
+        "name": {
+          "type": "Text",
+          "config": { "label": "Name", "placeholder": "" }
+        },
+        "label": {
+          "type": "Text",
+          "config": { "label": "Label", "placeholder": "" }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

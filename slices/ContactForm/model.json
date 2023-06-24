@@ -1,0 +1,54 @@
+{
+  "id": "contact_form",
+  "type": "SharedSlice",
+  "name": "ContactForm",
+  "description": "ContactForm",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "submit_button": {
+          "type": "Text",
+          "config": { "label": "Submit Button", "placeholder": "" }
+        }
+      },
+      "items": {
+        "label": {
+          "type": "Text",
+          "config": { "label": "Label", "placeholder": "" }
+        },
+        "placeholder": {
+          "type": "Text",
+          "config": { "label": "Placeholder", "placeholder": "" }
+        },
+        "name": {
+          "type": "Text",
+          "config": { "label": "Name", "placeholder": "" }
+        },
+        "required": {
+          "type": "Boolean",
+          "config": {
+            "label": "Required",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "is_text_area": {
+          "type": "Boolean",
+          "config": {
+            "label": "Is Text Area",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        }
+      }
+    }
+  ]
+}

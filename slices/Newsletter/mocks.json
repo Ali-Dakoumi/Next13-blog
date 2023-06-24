@@ -1,0 +1,46 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Medicine"
+						}
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Laborum anim officia consectetur sunt sit consequat consectetur dolore commodo amet. Ex est deserunt sit sunt minim. Aliquip Lorem veniam sint consequat eu nisi."
+						}
+					}
+				]
+			},
+			"name": {
+				"__TYPE__": "FieldContent",
+				"value": "women",
+				"type": "Text"
+			},
+			"label": {
+				"__TYPE__": "FieldContent",
+				"value": "managed",
+				"type": "Text"
+			},
+			"placeholder": {
+				"__TYPE__": "FieldContent",
+				"value": "fast",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]
