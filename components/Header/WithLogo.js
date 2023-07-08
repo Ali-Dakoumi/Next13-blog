@@ -6,7 +6,7 @@ export const WithLogo = ({
     logo,
     slices,
   }) => (
-  <div className="py-2 font-medium text-white bg-theme-heading bannerLink">
+  <div className="py-2 font-medium text-black bg-theme-heading bannerLink">
     with logo
     {logo && (
         <div className="h-16 w-52">

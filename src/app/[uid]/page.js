@@ -1,6 +1,5 @@
 import { SliceZone } from "@prismicio/react";
 import { createClient } from "../../prismicio";
-import * as prismic from "@prismicio/client";
 import resolver from "../../../sm-resolver";
 
 export default async function Page({params}) {
@@ -16,7 +15,7 @@ export default async function Page({params}) {
     return;
   }
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen max-w-6xl m-auto flex-col items-center justify-between py-24 px-10 gap-10">
       <SliceZone slices={data.slices}  resolver={resolver} />
     </main>
   )

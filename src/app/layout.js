@@ -1,15 +1,13 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import {Header} from "../../components/Header"
-import { createClient } from '../prismicio';
+import client from '../../lib/client';
 import { Seo } from '../../components/Seo';
 const inter = Inter({ subsets: ['latin'] })
 
  
 export async function generateMetadata() {
-  const client = createClient()
   const {data} = await client.getSingle("default_seo");
-  console.log("🚀 ~ file: layout.js:15 ~ generateMetadata ~ default_seo:", data)
  
   return {
     title: data.meta_title,
@@ -25,7 +23,6 @@ export async function generateMetadata() {
 
 
 export default async function RootLayout({ children }) {
-  const client = createClient()
   let header
   try {
     header = await client.getSingle("header");
@@ -35,7 +32,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <Seo />
-      <body className="">
+      <body className="bg-gray-200">
       <Header {...header.data} />
         {children}
       </body>

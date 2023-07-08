@@ -8,7 +8,7 @@ export const Article = ({  data: {
   author: { data: { name: [{ text : author_name }] } } 
 }
   }) => (
-  <div className="py-2 font-medium text-white bg-theme-heading bannerLink">
+  <div className="py-2 font-medium text-black bg-theme-heading bannerLink">
     <p>{author_name}</p>
     <PrismicRichText field={title} />
     {/* <PrismicRichText field={body} /> */}

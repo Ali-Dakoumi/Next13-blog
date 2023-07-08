@@ -1,24 +1,18 @@
 
-import { SliceZone } from '@prismicio/react';
-import { createClient } from '../../../prismicio';
+import client from '../../../../lib/client';
 import Article from '../../../../components/Article';
 
-export default async function Page({params}) {
-  const client = createClient()
-  
+export default async function Page({params}) {  
     let article
 
     try {
       article = await client.getByUID('article',params.uid, { fetchLinks: 'author.name' },)
-      console.log("🚀 ~ file: page.js:13 ~ Page ~ article:", article)
      } catch (error) {
        console.log(error)
      }
      
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      articles page
-        {params.uid}
+    <main className="flex min-h-screen flex-col items-center justify-between py-24 px-10">
         <Article {...article} />
     </main>
   )

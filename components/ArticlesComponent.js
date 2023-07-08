@@ -1,13 +1,14 @@
+
 import { PrismicNextLink } from "@prismicio/next";
 import Link from "next/link";
 import { PreviewArticle } from "./Article";
 import { Grid, Box } from "../components/MUI/Proxy"
 
-const ArticlesComponent = ({ articles }) => {
+const ArticlesComponent = ({ articles }) => {  
   return (
-      <Grid container columns={{ xs: 1, sm: 2, md: 4 }} direction="row" spacing={4}>
+      <Grid container columns={{ xs: 1, sm: 8, md: 12 }}   spacing={{ xs: 2 }}>
         {articles.map(({ data, uid }, i) => (
-          <Grid item xs={4} sm={6} key={i}>
+          <Grid item  xs={1} sm={4} md={3} lg={4} key={i}>
             <PreviewArticle uid={uid} {...data} />
           </Grid>
         ))}

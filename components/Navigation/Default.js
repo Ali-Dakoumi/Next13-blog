@@ -1,8 +1,11 @@
 import { PrismicNextLink } from "@prismicio/next";
-import {Link} from "../MUI/Proxy/index"
+import Link from "next/link";
 
-export const NavItem = ({ items }) => (
-  items.map(({ link, link_text }, i) => (
-      <Link padding="1rem" underline="hover" color="inherit" href={link.slug} key={i} >{link_text}</Link>
-  ))
-);
+export const NavItem = ({ items }) =>
+  items.map(({ link, link_text }, i) => {
+    return (
+      <Link href={`/${link.uid}`} key={i}>
+        {link_text}
+      </Link>
+    );
+  });

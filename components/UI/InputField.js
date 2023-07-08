@@ -1,7 +1,7 @@
 const Field = ({ label, children }) => {
   return (
-    <label>
-      <span className="text-sm text-slate-500">{label}</span>
+    <label className="flex flex-col gap-2 py-3">
+      <span className="text-sm text-black">{label}</span>
       {children}
     </label>
   );

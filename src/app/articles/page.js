@@ -1,17 +1,10 @@
-import { SliceZone } from "@prismicio/react";
 import ArticlesComponent from "../../../components/ArticlesComponent";
-import { createClient } from "@/prismicio";
-import SliceResolver from "../../../sm-resolver";
-import Article from "../../../components/Article";
+import client from "../../../lib/client";
 
 export default async function Page({ params }) {
-  const client = createClient();
-  let data = null,
-    articles; // Assigning a default value
+    let articles
 
   try {
-    ({ data } = await client.getByUID("page", "articles"));
-    // Process the data or perform any necessary operations
     articles = await client.getAllByType("article", {
       fetchLinks: "author.name",
     });
@@ -19,11 +12,9 @@ export default async function Page({ params }) {
     console.log(error);
     return;
   }
-  console.log("🚀 ~ file: page.js:18 ~ Page ~ articles:", articles.data)
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      articles page
+    <main className="flex min-h-screen flex-col items-center justify-between py-24 px-10">
       <ArticlesComponent  articles={articles} />
     </main>
   );
