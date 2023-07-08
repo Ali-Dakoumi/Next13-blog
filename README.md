@@ -1,3 +1,1 @@
-## add some next js features 
-## correct forms 
-## check errors , seo , build and test 
+## used the nw features of next 13 and prismic to create a ery simple blog

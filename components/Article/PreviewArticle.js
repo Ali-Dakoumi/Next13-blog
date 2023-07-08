@@ -2,9 +2,6 @@ import { PrismicRichText } from "@prismicio/react";
 import { Link, Card, Button, CardActions, CardContent, CardMedia, Typography } from "../MUI/Proxy/index"
 import { getExcerpt } from "../../lib/getExcerpt";
 
-
-
-
 export const PreviewArticle = ({
   uid,
   title,
@@ -16,7 +13,7 @@ export const PreviewArticle = ({
   const excerpt = getExcerpt(body);
 
   return (
-    <Card sx={{ maxWidth: 420 }} width="100%" height="100%">
+    <Card sx={{ maxWidth: 420 }} width="100%" height="100%" className="h-full">
       <Link underline="none" href={`/articles/${uid}`}>
         <CardMedia
           sx={{ height: 240 }}
