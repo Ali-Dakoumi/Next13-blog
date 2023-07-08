@@ -1,4 +1,3 @@
-import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { PrismicRichText } from "@prismicio/react";
 import { Link, Card, Button, CardActions, CardContent, CardMedia, Typography } from "../MUI/Proxy/index"
 import { getExcerpt } from "../../lib/getExcerpt";

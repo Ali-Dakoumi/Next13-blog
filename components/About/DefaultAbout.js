@@ -1,4 +1,3 @@
-import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { PrismicRichText } from "@prismicio/react";
 
 export const DefaultAbout = ({ body }) => {
